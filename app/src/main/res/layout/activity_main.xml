@@ -7,10 +7,7 @@
 
     <LinearLayout
         android:id="@+id/rootView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/padding">
+        style="@style/rootView">
 
         <ImageView
             android:id="@+id/logoImageView"
