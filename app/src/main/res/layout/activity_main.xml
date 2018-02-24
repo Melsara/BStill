@@ -7,7 +7,8 @@
 
     <LinearLayout
         android:id="@+id/rootView"
-        style="@style/rootView">
+        style="@style/rootView"
+        android:focusable="true" android:focusableInTouchMode="true">
 
         <ImageView
             android:id="@+id/logoImageView"
@@ -19,15 +20,14 @@
         <TextView
             android:id="@+id/descriptionTextView"
             style="@style/TextViewDesc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:textSize="@dimen/big_title_font_size"
             android:layout_marginTop="@dimen/margin" />
 
         <EditText
             android:id="@+id/codeEditText"
-            android:layout_marginTop="@dimen/margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
             android:gravity="center"
             android:hint="@string/inputCode"
             android:inputType="text"
@@ -38,12 +38,9 @@
 
         <Button
             android:id="@+id/submitButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/buttonStyle"
             android:layout_marginTop="@dimen/margin"
-            android:background="@color/colorPrimary"
-            android:text="@string/submit"
-            android:textColor="@color/colorText" />
+            android:text="@string/submit" />
 
     </LinearLayout>
 

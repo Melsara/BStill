@@ -4,4 +4,8 @@
     <string name="inputCode">Insert your code</string>
     <string name="submit">Submit</string>
     <string name="levelOfStressResult">Your level of stress is</string>
+    <string name="levelOfStressResultLow">Your level of stress is low.\nYour habits were good since the last month. Keep up the good work!</string>
+    <string name="levelOfStressResultMedium">Your level of stress is medium.\nMaybe you have been in some stressful situations during last month?</string>
+    <string name="levelOfStressResultHigh">Your level of stress is high.\nYou may want to consider changing your habits.</string>
+    <string name="goToGraphButton">Check your historical data</string>
 </resources>
