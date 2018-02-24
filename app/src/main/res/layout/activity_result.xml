@@ -6,15 +6,21 @@
     android:layout_height="match_parent"
     tools:context="solution.b_still.co.b_still.Result">
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:id="@+id/rootViewResult"
         style="@style/rootView">
 
         <TextView
             android:id="@+id/descriptionTextView"
             style="@style/TextViewDesc"
+            android:layout_above="@id/resultColor"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:textSize="@dimen/big_title_font_size"
-            android:layout_margin="@dimen/margin" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/resultColor"
@@ -22,18 +28,39 @@
             android:layout_height="100dp"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:scaleType="centerCrop"/>
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTextView" />
 
         <TextView
             android:id="@+id/resultTextView"
             style="@style/TextViewDesc"
-            android:layout_margin="@dimen/margin"/>
+            android:layout_above="@id/goToGraph"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resultColor" />
 
         <Button
             android:id="@+id/goToGraph"
             style="@style/buttonStyle"
-            android:text="@string/goToGraphButton"/>
+            android:layout_width="348dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/goToGraphButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resultTextView" />
 
-    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
 
 </ScrollView>
