@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import static solution.b_still.co.b_still.MainActivity.CODE_KEY;
@@ -22,7 +23,7 @@ public class Result extends AppCompatActivity {
         final Bundle bundle = result.getExtras();
         inputCode = bundle.getString(CODE_KEY);
 
-        de.hdodenhof.circleimageview.CircleImageView resultView = findViewById(R.id.resultColor);
+        ImageView resultView = findViewById(R.id.resultColor);
         TextView descriptionTextView = (TextView) findViewById(R.id.descriptionTextView);
         TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
         final Button goToGraph = (Button) findViewById(R.id.goToGraph);
@@ -31,15 +32,15 @@ public class Result extends AppCompatActivity {
 
 
         if (inputCode.equals("159")) {
-            resultView.setBackgroundColor(getColor(R.color.colorLow));
+            resultView.setImageDrawable(getDrawable(R.drawable.low));
             resultTextView.setText(getString(R.string.levelOfStressResultLow));
         } else if (inputCode.equals("357")) {
-            resultView.setBackgroundColor(getColor(R.color.colorMedium));
+            resultView.setImageDrawable(getDrawable(R.drawable.med));
             resultTextView.setText(getString(R.string.levelOfStressResultMedium));
         }
 
         else {
-            resultView.setBackgroundColor(getColor(R.color.colorHigh));
+            resultView.setImageDrawable(getDrawable(R.drawable.high));
             resultTextView.setText(getString(R.string.levelOfStressResultHigh));
         }
 
