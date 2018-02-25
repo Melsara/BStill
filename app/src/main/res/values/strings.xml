@@ -8,4 +8,6 @@
     <string name="levelOfStressResultMedium">Your level of stress is medium.\nMaybe you have been in some stressful situations during last month?</string>
     <string name="levelOfStressResultHigh">Your level of stress is high.\nYou may want to consider changing your habits.</string>
     <string name="goToGraphButton">Check your historical data</string>
+    <string name="personalizedContentTitle">Your personalized advice</string>
+    <string name="cardTitle">Review your habits</string>
 </resources>
